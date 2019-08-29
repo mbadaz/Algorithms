@@ -20,7 +20,7 @@ public class ResizingArrayStack<T> {
         }
     }
 
-    void push(T item) {
+    public void push(T item) {
         if (N == items.length) {
             // Double the size of the items array when it gets full
             resizeArray(items.length * 2);
